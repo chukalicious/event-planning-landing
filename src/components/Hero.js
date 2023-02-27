@@ -1,7 +1,10 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { useTheme } from "@mui/material/styles";
+
 const Hero = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -26,60 +29,88 @@ const Hero = () => {
             backgroundColor: "primary.main",
             width: "80%",
             height: "224%",
+            [theme.breakpoints.down("sm")]: {
+              margin: "0 auto",
+              width: "90%",
+            },
+          }}
+        ></Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            marginTop: "-20rem",
+            [theme.breakpoints.down("sm")]: {
+              height: "215%",
+              width: "80%",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "-20rem",
+            },
           }}
         >
-          <Box
+          <Typography
+            variant="h1"
+            mt="15%"
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              ml: "15%",
+              color: "primary.contrast",
+              fontStyle: "italic",
+              fontWeight: "bold",
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                mt: "2rem",
+                fontSize: "3rem",
+                fontStyle: "normal",
+                textAlign: "center",
+              },
+            }}
+          >
+            Event Planner
+          </Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              mt: "3rem",
+              fontSize: "1rem",
+              fontWeight: "bold",
+              [theme.breakpoints.down("sm")]: {
+                mt: "1rem",
+                textAlign: "center",
+                padding: ".5rem",
+                color: "white",
+                fontSize: "1.50rem",
+              },
+            }}
+          >
+            Let's plan your next event together!
+          </Typography>
+          <Button
+            elevation={10}
+            variant="contained"
+            sx={{
+              width: "13rem",
+              height: "3.5rem",
+              borderRadius: "2.5rem",
+              mx: "auto",
+              mt: "3rem",
+              backgroundColor: "warning.main",
+              [theme.breakpoints.down("sm")]: {
+                mt: "1rem",
+              },
             }}
           >
             <Typography
-              variant="h1"
-              mt="15%"
+              fontFamily="Montserrat"
               sx={{
-                color: "primary.contrast",
-                fontStyle: "italic",
+                letterSpacing: "0.2rem",
+                fontSize: "0.8rem",
                 fontWeight: "bold",
               }}
             >
-              Event Planner
+              Get Started
             </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                mt: "3rem",
-                fontSize: "1.5rem",
-                fontWeight: "bold",
-              }}
-            >
-              Let's plan your next event together!
-            </Typography>
-            <Button
-              elevation={10}
-              variant="contained"
-              sx={{
-                width: "13rem",
-                height: "3.5rem",
-                borderRadius: "2.5rem",
-                mx: "auto",
-                mt: "3rem",
-                backgroundColor: "warning.main",
-              }}
-            >
-              <Typography
-                fontFamily="Montserrat"
-                sx={{
-                  letterSpacing: "0.2rem",
-                  fontSize: "0.8rem",
-                  fontWeight: "bold",
-                }}
-              >
-                Get Started
-              </Typography>
-            </Button>
-          </Box>
+          </Button>
         </Box>
       </Box>
     </Box>

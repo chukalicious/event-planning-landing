@@ -12,13 +12,9 @@ function App() {
       <CssBaseline />
 
       <ThemeProvider theme={appTheme}>
-        <Box
-        // sx={{
-        //   width: "100%",
-        //   mx: "auto",
-        // }}
-        >
-          <Hero /> <About />
+        <Box>
+          <Hero />
+          <About />
         </Box>
       </ThemeProvider>
     </>
