@@ -3,24 +3,29 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 const Hero = () => {
   return (
-    <Box sx={{ height: "50vh" }}>
+    <Box
+      sx={{
+        height: "50vh",
+        display: "flex",
+      }}
+    >
       <Box
         sx={{
           width: "100%",
           backgroundColor: "primary.main",
-          height: "55vh",
+          height: "45%",
         }}
       >
         <Box
           sx={{
             backgroundImage:
-              "url(https://live.staticflickr.com/65535/52705723371_ff460622a3.jpg)",
+              "url(https://live.staticflickr.com/65535/52705723371_a9174cd6ae_o.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "left",
             backgroundColor: "primary.main",
             width: "80%",
-            height: "75vh",
+            height: "224%",
           }}
         >
           <Box
