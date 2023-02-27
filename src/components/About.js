@@ -1,6 +1,8 @@
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
+import celebrate from "../assets/celebrate.svg";
+import ImageListItem from "@mui/material/ImageListItem";
 const About = () => {
   const theme = useTheme();
   return (
@@ -17,8 +19,6 @@ const About = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "#fef3e7",
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23e8ebed' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
         }}
       >
         <Typography
@@ -57,15 +57,33 @@ const About = () => {
           </a>
         </Typography>
       </Box>
-      <Box
-        sx={{
-          width: "100%",
-          // backgroundColor: "#2e424f",
-          height: "45%",
-          border: "solid red 3px",
-        }}
-      >
-        what is this?{" "}
+      <Box sx={{ minHeight: "45%" }}>
+        <Box
+          sx={{
+            width: "100%",
+            height: "50vh",
+            backgroundImage: `url(${celebrate})`,
+            backgroundColor: "#FDFAF6",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              height: "20%",
+              backgroundColor: "secondary.main",
+              width: "100%",
+            }}
+          ></Box>
+          <Box>
+            <ImageListItem sx={{ width: "85%", margin: "-2.5rem auto" }}>
+              <img
+                src={`https://live.staticflickr.com/65535/52706213318_aa24502c3b_c.jpg`}
+                alt="video of one of our events"
+                loading="lazy"
+              />
+            </ImageListItem>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
