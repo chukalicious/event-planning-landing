@@ -127,20 +127,18 @@ const About = () => {
                 },
               }}
             ></Box>
-            {/* <Box> */}
+
             <ImageListItem
               sx={{
                 width: "85%",
                 margin: "-2.5rem auto",
-                [theme.breakpoints.down("md")]: {
-                  border: "blue solid 3px",
-                },
+                [theme.breakpoints.down("md")]: {},
                 [theme.breakpoints.up("md")]: {
                   marginRight: "0rem",
-                  marginTop: "-30rem",
+                  marginTop: "-24rem",
                   width: "80%",
-                  // maxHeight: "100%",
-                  border: "green solid 3px",
+                  height: "100%",
+                  // border: "green solid 3px",
                 },
               }}
             >
@@ -152,7 +150,6 @@ const About = () => {
             </ImageListItem>
           </Box>
         </Box>
-        {/* </Box> */}
         {/* end sibling */}
       </Box>
     </Box>

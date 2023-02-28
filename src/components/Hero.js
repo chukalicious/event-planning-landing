@@ -38,7 +38,7 @@ const Hero = () => {
               margin: "0 auto",
               width: "90%",
             },
-            [theme.breakpoints.down("lg")]: {},
+            [theme.breakpoints.up("md")]: {},
           }}
         ></Box>
         <Box
