@@ -121,19 +121,38 @@ const About = () => {
                 height: "20%",
                 backgroundColor: "secondary.main",
                 width: "100%",
+                [theme.breakpoints.up("md")]: {
+                  width: "20%",
+                  height: "100%",
+                },
               }}
             ></Box>
-            <Box>
-              <ImageListItem sx={{ width: "85%", margin: "-2.5rem auto" }}>
-                <img
-                  src={`https://live.staticflickr.com/65535/52706213318_aa24502c3b_c.jpg`}
-                  alt="video of one of our events"
-                  loading="lazy"
-                />
-              </ImageListItem>
-            </Box>
+            {/* <Box> */}
+            <ImageListItem
+              sx={{
+                width: "85%",
+                margin: "-2.5rem auto",
+                [theme.breakpoints.down("md")]: {
+                  border: "blue solid 3px",
+                },
+                [theme.breakpoints.up("md")]: {
+                  marginRight: "0rem",
+                  marginTop: "-30rem",
+                  width: "80%",
+                  // maxHeight: "100%",
+                  border: "green solid 3px",
+                },
+              }}
+            >
+              <img
+                src={`https://live.staticflickr.com/65535/52706213318_aa24502c3b_c.jpg`}
+                alt="video of one of our events"
+                loading="lazy"
+              />
+            </ImageListItem>
           </Box>
         </Box>
+        {/* </Box> */}
         {/* end sibling */}
       </Box>
     </Box>
