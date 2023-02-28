@@ -25,14 +25,20 @@ const Hero = () => {
               "url(https://live.staticflickr.com/65535/52705723371_a9174cd6ae_o.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "left",
+            backgroundPosition: "center",
             backgroundColor: "primary.main",
-            width: "80%",
-            height: "224%",
+            width: "90%",
+            height: "200%",
+            margin: "0",
             [theme.breakpoints.down("sm")]: {
               margin: "0 auto",
               width: "90%",
             },
+            [theme.breakpoints.down("md")]: {
+              margin: "0 auto",
+              width: "90%",
+            },
+            [theme.breakpoints.up("md")]: {},
           }}
         ></Box>
         <Box
@@ -40,19 +46,30 @@ const Hero = () => {
             display: "flex",
             flexDirection: "column",
             width: "100%",
+            height: "204%",
             marginTop: "-20rem",
             [theme.breakpoints.down("sm")]: {
-              height: "215%",
               width: "80%",
               marginLeft: "auto",
               marginRight: "auto",
-              marginTop: "-20rem",
+            },
+            [theme.breakpoints.down("md")]: {
+              width: "80%",
+              marginLeft: "auto",
+              marginRight: "auto",
+            },
+            [theme.breakpoints.up("md")]: {
+              // border: "3px solid red",
+              marginTop: "-22rem",
+              color: "white",
+              width: "58%",
+              marginLeft: "auto",
+              marginRight: "auto",
             },
           }}
         >
           <Typography
             variant="h1"
-            mt="15%"
             sx={{
               color: "primary.contrast",
               fontStyle: "italic",
@@ -62,6 +79,20 @@ const Hero = () => {
                 mt: "2rem",
                 fontSize: "3rem",
                 fontStyle: "normal",
+                textAlign: "center",
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                mt: "2rem",
+                fontSize: "3rem",
+                fontStyle: "normal",
+                textAlign: "center",
+              },
+              [theme.breakpoints.up("md")]: {
+                width: "100%",
+                mt: "3.5rem",
+                fontSize: "4rem",
+                fontStyle: "extra-bold",
                 textAlign: "center",
               },
             }}
@@ -81,6 +112,21 @@ const Hero = () => {
                 color: "white",
                 fontSize: "1.50rem",
               },
+              [theme.breakpoints.down("md")]: {
+                mt: "1rem",
+                textAlign: "center",
+                padding: ".5rem",
+                color: "white",
+                fontSize: "1.50rem",
+              },
+              [theme.breakpoints.up("md")]: {
+                width: "100%",
+                mt: "1rem",
+                fontFamily: "theme.typography.fontFamily",
+                fontWeight: "medium",
+                textAlign: "center",
+                letterSpacing: "-0.1rem",
+              },
             }}
           >
             Let's plan your next event together!
@@ -96,6 +142,9 @@ const Hero = () => {
               mt: "3rem",
               backgroundColor: "warning.main",
               [theme.breakpoints.down("sm")]: {
+                mt: "1rem",
+              },
+              [theme.breakpoints.down("md")]: {
                 mt: "1rem",
               },
             }}
