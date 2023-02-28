@@ -9,6 +9,7 @@ import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/lora/400.css";
 import "@fontsource/lora/600.css";
+import "@fontsource/lora/700.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

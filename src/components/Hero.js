@@ -47,21 +47,24 @@ const Hero = () => {
             flexDirection: "column",
             width: "100%",
             height: "204%",
+            marginTop: "-20rem",
             [theme.breakpoints.down("sm")]: {
               width: "80%",
               marginLeft: "auto",
               marginRight: "auto",
-              marginTop: "-20rem",
             },
             [theme.breakpoints.down("md")]: {
               width: "80%",
               marginLeft: "auto",
               marginRight: "auto",
-              marginTop: "-20rem",
             },
             [theme.breakpoints.up("md")]: {
-              border: "3px solid red",
-              marginTop: "-27rem",
+              // border: "3px solid red",
+              marginTop: "-22rem",
+              color: "white",
+              width: "58%",
+              marginLeft: "auto",
+              marginRight: "auto",
             },
           }}
         >
@@ -83,6 +86,13 @@ const Hero = () => {
                 mt: "2rem",
                 fontSize: "3rem",
                 fontStyle: "normal",
+                textAlign: "center",
+              },
+              [theme.breakpoints.up("md")]: {
+                width: "100%",
+                mt: "3.5rem",
+                fontSize: "4rem",
+                fontStyle: "extra-bold",
                 textAlign: "center",
               },
             }}
@@ -108,6 +118,14 @@ const Hero = () => {
                 padding: ".5rem",
                 color: "white",
                 fontSize: "1.50rem",
+              },
+              [theme.breakpoints.up("md")]: {
+                width: "100%",
+                mt: "1rem",
+                fontFamily: "theme.typography.fontFamily",
+                fontWeight: "medium",
+                textAlign: "center",
+                letterSpacing: "-0.1rem",
               },
             }}
           >
