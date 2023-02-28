@@ -19,6 +19,9 @@ const About = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          [theme.breakpoints.down("md")]: {
+            p: "1.5rem 2.35rem",
+          },
         }}
       >
         <Typography
@@ -31,11 +34,23 @@ const About = () => {
             fontWeight: "bold",
             lineHeight: "1.80rem",
             letterSpacing: "-.05rem",
+            [theme.breakpoints.down("md")]: {
+              fontSize: "2rem",
+            },
           }}
         >
           We are an event planner in San Francisco, CA
         </Typography>
-        <Typography sx={{ p: ".5rem .75rem", fontSize: "1.15rem", mb: "1rem" }}>
+        <Typography
+          sx={{
+            p: "1rem 1.25rem",
+            fontSize: "1.15rem",
+            mb: "1rem",
+            [theme.breakpoints.down("md")]: {
+              p: "1rem 1.25rem",
+            },
+          }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
           neque ac augue dignissim convallis. Praesent sit amet nulla quam.
           Donec tempor volutpat magna, ut dapibus dolor gravida nec. Vestibulum
