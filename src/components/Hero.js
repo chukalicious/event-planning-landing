@@ -25,10 +25,11 @@ const Hero = () => {
               "url(https://live.staticflickr.com/65535/52705723371_a9174cd6ae_o.jpg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "left",
+            backgroundPosition: "center",
             backgroundColor: "primary.main",
-            width: "80%",
-            height: "224%",
+            width: "90%",
+            height: "200%",
+            margin: "0",
             [theme.breakpoints.down("sm")]: {
               margin: "0 auto",
               width: "90%",
@@ -37,6 +38,7 @@ const Hero = () => {
               margin: "0 auto",
               width: "90%",
             },
+            [theme.breakpoints.down("lg")]: {},
           }}
         ></Box>
         <Box
@@ -44,26 +46,27 @@ const Hero = () => {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            marginTop: "-20rem",
+            height: "204%",
             [theme.breakpoints.down("sm")]: {
-              height: "215%",
               width: "80%",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "-20rem",
             },
             [theme.breakpoints.down("md")]: {
-              height: "215%",
               width: "80%",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "-20rem",
             },
+            [theme.breakpoints.up("md")]: {
+              border: "3px solid red",
+              marginTop: "-27rem",
+            },
           }}
         >
           <Typography
             variant="h1"
-            mt="15%"
             sx={{
               color: "primary.contrast",
               fontStyle: "italic",
