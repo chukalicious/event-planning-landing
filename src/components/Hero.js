@@ -33,6 +33,10 @@ const Hero = () => {
               margin: "0 auto",
               width: "90%",
             },
+            [theme.breakpoints.down("md")]: {
+              margin: "0 auto",
+              width: "90%",
+            },
           }}
         ></Box>
         <Box
@@ -42,6 +46,13 @@ const Hero = () => {
             width: "100%",
             marginTop: "-20rem",
             [theme.breakpoints.down("sm")]: {
+              height: "215%",
+              width: "80%",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "-20rem",
+            },
+            [theme.breakpoints.down("md")]: {
               height: "215%",
               width: "80%",
               marginLeft: "auto",
@@ -58,6 +69,13 @@ const Hero = () => {
               fontStyle: "italic",
               fontWeight: "bold",
               [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                mt: "2rem",
+                fontSize: "3rem",
+                fontStyle: "normal",
+                textAlign: "center",
+              },
+              [theme.breakpoints.down("md")]: {
                 width: "100%",
                 mt: "2rem",
                 fontSize: "3rem",
@@ -81,6 +99,13 @@ const Hero = () => {
                 color: "white",
                 fontSize: "1.50rem",
               },
+              [theme.breakpoints.down("md")]: {
+                mt: "1rem",
+                textAlign: "center",
+                padding: ".5rem",
+                color: "white",
+                fontSize: "1.50rem",
+              },
             }}
           >
             Let's plan your next event together!
@@ -96,6 +121,9 @@ const Hero = () => {
               mt: "3rem",
               backgroundColor: "warning.main",
               [theme.breakpoints.down("sm")]: {
+                mt: "1rem",
+              },
+              [theme.breakpoints.down("md")]: {
                 mt: "1rem",
               },
             }}
