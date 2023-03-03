@@ -13,7 +13,6 @@ const TypeOfEventContainer = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        // height: "100vh",
         mt: "5rem",
         width: "85%",
         mx: "auto",
@@ -25,9 +24,8 @@ const TypeOfEventContainer = () => {
         }}
       >
         <Typography
-          component="h2"
+          variant="h2"
           sx={{
-            fontSize: "2rem",
             fontFamily: theme.typography.fontFamily,
             fontWeight: "bold",
           }}
