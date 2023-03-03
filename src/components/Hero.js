@@ -10,13 +10,14 @@ const Hero = () => {
       sx={{
         height: "50vh",
         display: "flex",
+        // border: "3px solid hotpink",
       }}
     >
       <Box
         sx={{
           width: "100%",
           backgroundColor: "primary.main",
-          height: "45%",
+          height: "50%",
         }}
       >
         <Box

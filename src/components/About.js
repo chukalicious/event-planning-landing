@@ -11,6 +11,7 @@ const About = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
+        height: "auto",
         width: "100%",
       }}
     >
@@ -98,16 +99,17 @@ const About = () => {
 
         <Box
           sx={{
-            minHeight: "45%",
+            maxHeight: "45%",
             [theme.breakpoints.up("md")]: {
               width: "50%",
+              maxHeight: "45%",
             },
           }}
         >
           <Box
             sx={{
               width: "100%",
-              height: "100vh",
+              height: "60vh",
               backgroundImage: `url(${celebrate})`,
               backgroundColor: "#FDFAF6",
             }}
@@ -115,7 +117,7 @@ const About = () => {
             <Box
               sx={{
                 display: "flex",
-                height: "20%",
+                height: "20vh",
                 backgroundColor: "secondary.main",
                 width: "100%",
                 [theme.breakpoints.up("md")]: {
@@ -129,13 +131,20 @@ const About = () => {
               sx={{
                 width: "85%",
                 margin: "-2.5rem auto",
-                [theme.breakpoints.down("md")]: {},
+                [theme.breakpoints.up("sm")]: {
+                  width: "85%",
+                  margin: "-2.5rem auto",
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "85%",
+                },
                 [theme.breakpoints.up("md")]: {
                   marginRight: "0rem",
-                  marginTop: "-24rem",
+                  marginTop: "-30rem",
+                  position: "relative",
+                  top: "1.40rem",
                   width: "80%",
                   height: "100%",
-                  // border: "green solid 3px",
                 },
               }}
             >
