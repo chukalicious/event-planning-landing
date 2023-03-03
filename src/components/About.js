@@ -12,7 +12,6 @@ const About = () => {
         display: "flex",
         flexDirection: "column",
         width: "100%",
-        height: "50vh",
       }}
     >
       {/* start parent */}
@@ -62,9 +61,7 @@ const About = () => {
               p: "1rem 1.25rem",
               fontSize: "1.15rem",
               mb: "1rem",
-              [theme.breakpoints.down("md")]: {
-                // p: "1rem 1.25rem",
-              },
+              [theme.breakpoints.down("md")]: {},
               [theme.breakpoints.up("md")]: {
                 fontSize: theme.typography.body2,
               },
@@ -110,7 +107,7 @@ const About = () => {
           <Box
             sx={{
               width: "100%",
-              height: "50vh",
+              height: "100vh",
               backgroundImage: `url(${celebrate})`,
               backgroundColor: "#FDFAF6",
             }}
