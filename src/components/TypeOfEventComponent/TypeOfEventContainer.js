@@ -2,7 +2,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import { useTheme } from "@mui/material/styles";
-import { typesOfEvent as cards } from "../helpers/typesOfEvent";
+import { typesOfEvent as cards } from "../../helpers/typesOfEvent";
 import TypeofEventItem from "./TypeofEventItem";
 
 const TypeOfEventContainer = () => {
@@ -13,7 +13,7 @@ const TypeOfEventContainer = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
+        // height: "100vh",
         mt: "5rem",
         width: "85%",
         mx: "auto",
@@ -45,7 +45,13 @@ const TypeOfEventContainer = () => {
           lacus in nisl aliquet aliquam. Nulla facilisi. Nulla facilisi. Nulla
         </Typography>
       </Box>
-      <Box sx={{ p: "2rem", width: "95%", mx: "auto" }}>
+      <Box
+        sx={{
+          p: "2rem",
+          width: "95%",
+          mx: "auto",
+        }}
+      >
         <ImageList
           cols={{ sm: 1 }}
           gap={20}
