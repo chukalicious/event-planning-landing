@@ -9,6 +9,7 @@ const HowItWorksStep = (props) => {
   return (
     <Box
       sx={{
+        border: "red solid 3px",
         width: "100%",
         [theme.breakpoints.up("md")]: {
           display: "flex",
