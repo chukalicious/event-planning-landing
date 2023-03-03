@@ -5,6 +5,7 @@ import { appTheme } from "./themes/appTheme";
 import { Box } from "@mui/system";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import TypeOfEventContainer from "./components/TypeOfEventContainer";
 
 function App() {
   return (
@@ -12,10 +13,9 @@ function App() {
       <CssBaseline />
 
       <ThemeProvider theme={appTheme}>
-        <Box>
-          <Hero />
-          <About />
-        </Box>
+        <Hero />
+        <About />
+        <TypeOfEventContainer />
       </ThemeProvider>
     </>
   );
