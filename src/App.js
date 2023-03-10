@@ -2,10 +2,10 @@ import "./App.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { appTheme } from "./themes/appTheme";
-import { Box } from "@mui/system";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import TypeOfEventContainer from "./components/TypeOfEventContainer";
+import TypeOfEventContainer from "./components/TypeOfEventComponent/TypeOfEventContainer";
+import HowItWorksContainer from "./components/HowItWorks/HowItWorksContainer";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Hero />
         <About />
         <TypeOfEventContainer />
+        <HowItWorksContainer />
       </ThemeProvider>
     </>
   );

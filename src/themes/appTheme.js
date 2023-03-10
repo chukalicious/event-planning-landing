@@ -25,6 +25,9 @@ export const appTheme = createTheme({
   typography: {
     fontFamily: "Lora",
     fontWeightLight: 200,
+    h2: {
+      fontSize: "2rem",
+    },
     h6: {
       fontFamily: "Montserrat",
     },
