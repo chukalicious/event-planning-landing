@@ -9,7 +9,6 @@ const HowItWorksStep = (props) => {
   return (
     <Box
       sx={{
-        border: "red solid 3px",
         width: "100%",
         [theme.breakpoints.up("md")]: {
           display: "flex",
@@ -36,7 +35,7 @@ const HowItWorksStep = (props) => {
           textTransform: "capitalize",
           textAlign: "center",
           fontWeight: "bold",
-          p: "1rem",
+          minWidth: "fit-content",
         }}
       >
         {props.step.title}
@@ -44,7 +43,7 @@ const HowItWorksStep = (props) => {
       <Typography
         sx={{
           fontSize: theme.typography.body1,
-          p: "1rem",
+          p: ".5rem",
         }}
       >
         {props.step.text}

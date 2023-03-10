@@ -71,6 +71,7 @@ const HowItWorksContainer = () => {
               [theme.breakpoints.up("md")]: {
                 flexDirection: "row",
                 width: "90%",
+                mx: "auto",
               },
             }}
           >
