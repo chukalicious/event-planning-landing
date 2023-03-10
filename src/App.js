@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import TypeOfEventContainer from "./components/TypeOfEventComponent/TypeOfEventContainer";
 import HowItWorksContainer from "./components/HowItWorks/HowItWorksContainer";
+import ServicesContainer from "./components/ServicesComponent/ServicesContainer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <About />
         <TypeOfEventContainer />
         <HowItWorksContainer />
+        <ServicesContainer />
       </ThemeProvider>
     </>
   );
