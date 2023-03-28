@@ -2,8 +2,10 @@ import Services from "./Services";
 import { services } from "../../helpers/services";
 import Box from "@mui/material/Box";
 import ImageListItem from "@mui/material/ImageListItem";
+import { useTheme } from "@mui/material/styles";
 
 const ServicesContainer = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -45,13 +47,13 @@ const ServicesContainer = () => {
         >
           <Box
             sx={{
-              backgroundColor: "darkgray ",
+              backgroundColor: theme.palette.primary.main,
               height: "50%",
             }}
           ></Box>
           <Box
             sx={{
-              backgroundColor: "papayaWhip ",
+              backgroundColor: theme.palette.secondary.main,
               height: "50%",
             }}
           ></Box>
